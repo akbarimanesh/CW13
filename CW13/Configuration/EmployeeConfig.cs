@@ -15,7 +15,7 @@ namespace CW13.Configuration
         {
             builder.HasKey(x => x.EmployeeID);
             builder.HasMany(x => x.Territories).WithMany(x => x.Employees);
-           // builder.HasMany(x => x.employee).WithOne(x => x.employee1).HasForeignKey(x=>x.ReportsTo);
+            builder.HasMany(x => x.Employees).WithOne(x => x.ChailEmployee).HasForeignKey(x => x.ReportsTo).OnDelete(DeleteBehavior.Restrict); ;
 
         }
     }

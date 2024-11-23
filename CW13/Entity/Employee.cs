@@ -25,8 +25,8 @@ namespace CW13.Entity
         public byte[] Photo { get; set; }
         public string Notes { get; set; }
         public int ReportsTo { get; set; }
-        //public List<Employee> employee { get; set; }
-        //public Employee employee1 { get; set; }
+        public List<Employee> Employees { get; set; }
+        public Employee ChailEmployee { get; set; }
         public string PhotoPath { get; set; }
         public List<Order> orders { get; set; }
         public List<Territory> Territories { get; set; }
